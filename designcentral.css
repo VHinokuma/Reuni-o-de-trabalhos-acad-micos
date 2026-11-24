@@ -1,0 +1,75 @@
+body{
+    background-image: url(sakura.gif);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 50px;
+}
+
+/*configuração do aside para ele fazer a transição*/
+
+aside {
+    width: 250px;
+    height: 100vh;
+    background-color:rgb(168, 115, 141);
+
+    /*parte para fazer a animação*/
+    position: fixed;
+    left: -250px;
+    transition: left 0.3s ease;
+}
+
+aside.open{
+    left: 0;
+}
+
+.botao-af{
+
+    z-index: 10;
+    background-color: rgb(132, 63, 75);
+    color: white;
+    cursor: pointer;
+    border-radius: 9999px;
+    box-shadow: none;
+    padding: 10px 20px;  
+    box-sizing: border-box;
+    height: auto;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+.aba {
+  display: none;
+  padding: 6px 12px;
+  border: 1.5px solid #ccc;
+  border-top: none;
+}
+
+.botaoAba {
+    box-shadow: none;
+    padding: 20px 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(126, 62, 73);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: white;
+
+}
+
+.botaoAba.active {
+    background-color: rgb(129, 63, 74);
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background-color:rgb(198, 148, 172);
+    justify-content: space-around;
+    padding: 40px;
+    align-items: center;
+    
+}
