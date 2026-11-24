@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="stylesheet" href="designcentral.css">
+
 <title>Trabalhos- Desenvolvimento Web JavaScript</title>
 
     <meta charset="UTF-8">
@@ -13,14 +16,97 @@
     <meta property="og:description" content="Trabalho universitário referente a aula 01 da matéria de Desenvolvimento Web com JavaScript do bacharelado em Ciencia da Computação na Unesp.">
 
 </head>
+
 <body style="background-color: #d9b6c0;">
-<h1 style="text-align: center; font-size: 500%; color: #7a6269;background-color: #ffe3eb;">Atividades práticas<br>- Desenvolvimento Web com JavaScript -</h1>
 
-<table border="5px; color: white" style="text-align: center; width: 50%; margin: 0 auto; color: #543b08; background-color: #faebcd;";">
+<header>
+     <button class="botao-af" id="botao-af"> <h4>Menu</h4> </button> </div>
+</header>
 
-<tr><th><a href="https://vhinokuma.github.io/Atividade-pratica-aula01/"; style="color: #543b08;";><label style="font-size: 200%;">Atividade prática - aula 01</label></a></th></tr>
-<tr><th><a href="https://vhinokuma.github.io/Atividade-pratica-aulas02e03-html/"; style="color: #543b08;";><label style="font-size: 200%;">Atividade prática - aula 02 e 03</label></a></th></tr>
+    <aside id="menu-lateral">
+        <br>
+        <h1 style="text-align: center; margin-top: 8px; color: white">Categorias</h1> <br>
+        <button onclick="abrirAba (event, 'praticas')" class="botaoAba"> ATIVIDADES PRÁTICAS </button><br>
+        <button onclick="abrirAba (event, 'html')" class="botaoAba" > PRÁTICAS EM AULA - HTML E CSS</button>
+        <button onclick="abrirAba (event, 'js')" class="botaoAba" > PRÁTICAS EM AULA - JAVASCRIPT </button>
+    </aside>
 
-</table>
+    <!--para "reiniciar" o header para ele ficar no tamanho certo-->
+    <style>        
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <div class="aba" id="praticas">
+        <h1 style="text-align: center; font-size: 500%; color: #7a6269;background-color: rgba(254, 227, 235, 0.7)">Atividades práticas<br>- Desenvolvimento Web com JavaScript -</h1>
+
+        <br><br>
+
+        <table border="5px; color: white" style="text-align: center; width: 50%; margin: 0 auto; color: #543b08; background-color: #faebcd;";">
+        
+        <tr><th><a href="https://vhinokuma.github.io/Atividade-pratica-aula01/"; style="color: #543b08;";><label style="font-size: 200%;">Atividade prática 01</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/Atividade-pratica-aulas02e03-html/"; style="color: #543b08;";><label style="font-size: 200%;">Atividade prática 02 e 03</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/Atividade-pratica-04/"; style="color: #543b08;";><label style="font-size: 200%;">Atividade prática 04</label></a></th></tr>
+
+        </table>
+    </div>
+
+    <div class="aba" id="html">
+
+        <h1 style="text-align: center; font-size: 500%; color: #7a6269;background-color: rgba(254, 227, 235, 0.7)">Atividades em sala HTML e CSS</h1>
+
+        <br><br>
+
+        <table border="5px; color: white" style="text-align: center; width: 50%; margin: 0 auto; color: #543b08; background-color: #faebcd;";">
+        
+        <tr><th><a href="https://vhinokuma.github.io/Atividade-pratica-aula01/"; style="color: #543b08;";><label style="font-size: 200%;">Atividade prática 01</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/Atividade-pratica-aulas02e03-html/"; style="color: #543b08;";><label style="font-size: 200%;">Atividade prática 02 e 03</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/introdu-o-ao-css/"; style="color: #543b08;";><label style="font-size: 200%;">Introdução ao CSS</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/Tipos-de-borda---aula-05/"; style="color: #543b08;";><label style="font-size: 200%;">Tipos de bordas</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/Decora-es-de-titulo---aula-06/"; style="color: #543b08;";><label style="font-size: 200%;">Tipos de decorações de título</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/elementos-do-layout---aula-07/"; style="color: #543b08;";><label style="font-size: 200%;">Elementos do layout</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/introdu-o-ao-flexbox---aula-08/"; style="color: #543b08;";><label style="font-size: 200%;">Introdução ao flexbox</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/viewport---aula-09/"; style="color: #543b08;";><label style="font-size: 200%;">Viewport</label></a></th></tr>
+        
+        </table>
+
+    </div>
+
+        <div class="aba" id="js">
+
+        <h1 style="text-align: center; font-size: 500%; color: #7a6269;background-color: rgba(254, 227, 235, 0.7)">Atividades com JavaScript</h1>
+
+        <br><br>
+
+        <table border="5px; color: white" style="text-align: center; width: 50%; margin: 0 auto; color: #543b08; background-color: #faebcd;">
+        
+        <tr><th><a href="https://vhinokuma.github.io/introducao-ao-javascript---aula-01/"; style="color: #543b08;";><label style="font-size: 200%;">Introdução ao JavaScript</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/javascript---aula-02/"; style="color: #543b08;";><label style="font-size: 200%;">Eventos com o mouse</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/objetos-javascript/"; style="color: #543b08;";><label style="font-size: 200%;">Objetos</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/javascript---lanterna/"; style="color: #543b08;";><label style="font-size: 200%;">Canva lanterna</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/testes-valores-e-constantes/"; style="color: #543b08;";><label style="font-size: 200%;">Testes valor e constante</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/arrays-javascript/"; style="color: #543b08;";><label style="font-size: 200%;">Arrays</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/fun-es-javascript/"; style="color: #543b08;";><label style="font-size: 200%;">Funções</label></a></th></tr>
+        <tr><th><a href="https://vhinokuma.github.io/Canvas-no-HTML-e-JavaScript/"; style="color: #543b08;";><label style="font-size: 200%;">Canvas</label></a></th></tr>
+
+        </table>
+
+    </div>
+
+<script>
+    const toggleBtn = document.getElementById('botao-af');
+    const aside = document.getElementById('menu-lateral');
+
+    toggleBtn.addEventListener('click', () => {
+        /*aidiciona a classe se não*/
+        aside.classList.toggle('open');
+    });
+
+</script>
+
+<script src="central.js"></script>
 
 </body>
